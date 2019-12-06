@@ -1,0 +1,105 @@
+{
+    "Grocery": [
+        {
+            "description": "Grocery product 1",
+            "price": 13.6,
+            "upc": "218189466108"
+        },
+        {
+            "description": "Grocery product 2",
+            "price": 9.96,
+            "upc": "566059936467"
+        },
+        {
+            "description": "Grocery product 3",
+            "price": 2.54,
+            "upc": "997816853299"
+        },
+        {
+            "description": "Grocery product 4",
+            "price": 7.93,
+            "upc": "276070343730"
+        },
+        {
+            "price": 17.58,
+            "upc": "936692366578"
+        },
+        {
+            "description": "Grocery product 6",
+            "price": null,
+            "upc": "218443288774"
+        },
+        {
+            "description": "Grocery product 7",
+            "price": 14.43,
+            "upc": "157816204662"
+        },
+        {
+            "description": "Grocery product 8",
+            "price": 3.16,
+            "upc": "595237349270"
+        },
+        {
+            "description": "Grocery product 9",
+            "price": 10.69,
+            "upc": "432514793084"
+        },
+        {
+            "description": "Grocery product 10",
+            "price": 8.2,
+            "upc": "946525255184"
+        }
+    ],
+    "Bakery": [
+        {
+            "description": "Bakery product 1",
+            "price": 1.37,
+            "upc": "567636998373"
+        },
+        {
+            "description": "Bakery product 2",
+            "price": 18.86,
+            "upc": "451648843113"
+        },
+        {
+            "description": "Bakery product 3",
+            "price": 5.27,
+            "upc": "ABC"
+        },
+        {
+            "description": "Bakery product 4",
+            "price": 8.35,
+            "upc": "923354989671"
+        },
+        {
+            "description": "Bakery product 5",
+            "price": 12.67,
+            "upc": "713645584124"
+        },
+        {
+            "description": "Bakery product 6",
+            "price": 12.98,
+            "upc": "406014281624"
+        },
+        {
+            "description": "Bakery product 7",
+            "price": 1.21,
+            "upc": "997414436184"
+        },
+        {
+            "description": "Bakery product 8",
+            "price": 10.67,
+            "upc": "365435960405"
+        },
+        {
+            "description": "Bakery product 9",
+            "price": 12.45,
+            "upc": "326818768841"
+        },
+        {
+            "description": "Bakery product 10",
+            "price": 0.16,
+            "upc": "891699151933"
+        }
+    ]
+}
