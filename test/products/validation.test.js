@@ -4,10 +4,11 @@
 const { getValidProductList, getInvalidProductList } = require('../../products/validation')
 
 const products = require('../testData/products.json')
+const expectValidProduct = require('../testData/expectValidProduct.json')
 
 describe('getValidProductList', () => {
     test('Should get productList has a description, price is a number, and UPC is a 12 digit number', ()=>{
-        expect(getValidProductList(products)).toEqual({'product': 'valid'})
+        expect(getValidProductList(products)).toEqual(expectValidProduct)
     })
 })
 describe('getInvalidProductList', () => {
