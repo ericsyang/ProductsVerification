@@ -9,7 +9,11 @@ const getValidProductList = (products) => {
     return validProductList
 }
 const getInvalidProductList = (products) => {
-    let inValidProductList = {'product': 'invalid'}
+    let inValidProductList = {}
+    Object.keys(products)
+        .map((key) => inValidProductList[key] = products[key]
+        .filter((product) => !(hasDescription(product) && isPriceNumeric(product) && isUPCTwelveDigitNumber(product))))
+    
     return inValidProductList
 }
 
