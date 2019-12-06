@@ -1,7 +1,7 @@
 'use strict'
 /* eslint-env jest */
 
-const { hasDescription, isNumeric, isPriceNumeric} = require('../../lib/filter.js')
+const { hasDescription, isNumeric, isPriceNumeric, isUPCTwelveDigitNumber} = require('../../lib/filter.js')
 
 describe('hasDescription()', () => {
     const productWithDescrption = {
@@ -73,6 +73,35 @@ describe('isPriceNumeric()', () => {
     })
     test('if price is null, should return false', ()=>{
         expect(isPriceNumeric(productWithNullPrice)).toEqual(false)
+    })
+   
+})
+
+describe('isUPCTwelveDigitNumber()', () => {
+    const productUPCWithTwelveDigitNumber = {
+        "description": "im description",
+        "price": 13.6,
+        "upc": "218189466108"
+    }
+    const productUPCWithTwoDigitNumber = {
+        "description": "im description",
+        "price": null,
+        "upc": "21"
+    }
+    const productUPCWithCharacter = {
+        "description": "im description",
+        "price": null,
+        "upc": "218189466c0B"
+    }
+    test('if UPC is 12 digit String of number, should return true', ()=>{
+        expect(isUPCTwelveDigitNumber(productUPCWithTwelveDigitNumber)).toEqual(true)
+    })
+    test('if UPC is 2 digit String of number, should return false', ()=>{
+        expect(isUPCTwelveDigitNumber(productUPCWithTwoDigitNumber)).toEqual(false)
+    })
+   
+    test('if UPC has character, should return false', ()=>{
+        expect(isUPCTwelveDigitNumber(productUPCWithCharacter)).toEqual(false)
     })
    
 })
