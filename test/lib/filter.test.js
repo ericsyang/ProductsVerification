@@ -1,7 +1,7 @@
 'use strict'
 /* eslint-env jest */
 
-const {hasDescription, isNumeric} = require('../../lib/filter.js')
+const { hasDescription, isNumeric, isPriceNumeric} = require('../../lib/filter.js')
 
 describe('hasDescription()', () => {
     const productWithDescrption = {
@@ -55,4 +55,24 @@ describe('isNumeric()', () => {
     test('if it is Infinity number, should return false', ()=>{
         expect(isNumeric(1e10000)).toEqual(false)
     })
+})
+
+describe('isPriceNumeric()', () => {
+    const productWithNumericPrice = {
+        "description": "im description",
+        "price": 13.6,
+        "upc": "218189466108"
+    }
+    const productWithNullPrice = {
+        "description": "im description",
+        "price": null,
+        "upc": "218189466108"
+    }
+    test('if price is number, should return true', ()=>{
+        expect(isPriceNumeric(productWithNumericPrice)).toEqual(true)
+    })
+    test('if price is null, should return false', ()=>{
+        expect(isPriceNumeric(productWithNullPrice)).toEqual(false)
+    })
+   
 })
