@@ -1,0 +1,20 @@
+{
+    "Grocery": [
+        {
+            "price": 17.58,
+            "upc": "936692366578"
+        },
+        {
+            "description": "Grocery product 6",
+            "price": null,
+            "upc": "218443288774"
+        }
+    ],
+    "Bakery": [
+        {
+            "description": "Bakery product 3",
+            "price": 5.27,
+            "upc": "ABC"
+        }
+    ]
+}
