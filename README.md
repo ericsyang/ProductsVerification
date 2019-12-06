@@ -19,7 +19,7 @@ Start from here [Create your first function using Visual Studio Code
 
 #### IDE
 
-[visual studio code](https://code.visualstudio.com/)
+[Visual Studio Code](https://code.visualstudio.com/)
 
 #### API Doc
 Below are the APIs available and their brief description, see api def for the response structure
