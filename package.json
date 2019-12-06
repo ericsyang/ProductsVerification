@@ -2,6 +2,7 @@
   "name": "Assignment",
   "version": "1.0.0",
   "description": "",
+  "author": "Eric",
   "scripts": {
     "test": "jest --verbose --colors --detectOpenHandles",
     "watch": "jest --watch"
